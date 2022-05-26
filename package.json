@@ -1,5 +1,5 @@
 {
-  "name": "avanza",
+  "name": "avanza-lib",
   "version": "3.0.0",
   "description": "A wrapper for the unofficial Avanza API",
   "main": "dist/index.js",
@@ -12,17 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fhqvst/avanza.git"
+    "url": "git+https://github.com/dichai1983/avanza-lib.git"
   },
-  "author": "Filip Hallqvist <filiphallqvist@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/fhqvst/avanza/issues"
-  },
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/fhqvst/avanza#readme",
   "dependencies": {
     "ws": "^7.4.3"
   },
