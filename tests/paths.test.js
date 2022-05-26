@@ -107,7 +107,7 @@ test.serial('placeOrder()', async t => {
   const options = {
     accountId: '123',
     orderbookId: '456',
-    orderType: 'BUY',
+    side: 'BUY',
     price: 789,
     validUntil: '2023-01-01',
     volume: 100,
@@ -115,7 +115,7 @@ test.serial('placeOrder()', async t => {
   await t.context.avanza.placeOrder(options)
 
   const actual = t.context.avanza.call.args[0]
-  const expected = ['POST', constants.paths.ORDER_PLACE_DELETE_PATH, { ...options }]
+  const expected = ['POST', constants.paths.ORDER_PLACE_PATH, { ...options }]
   t.deepEqual(actual, expected)
 })
 
@@ -132,7 +132,7 @@ test.serial('getOrder()', async t => {
 test.serial('deleteOrder()', async t => {
   await t.context.avanza.deleteOrder('12345', '54321')
 
-  const expectedPath = constants.paths.ORDER_PLACE_DELETE_PATH
+  const expectedPath = constants.paths.ORDER_DELETE_PATH
   const expectedQuery = '?accountId=12345&orderId=54321'
   const actual = t.context.avanza.call.args[0]
   const expected = ['DELETE', expectedPath + expectedQuery]
