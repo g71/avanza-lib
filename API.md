@@ -745,7 +745,7 @@ Place a limit order.
 -   `options` **[Object][49]** Order options.
     -   `options.accountId` **[String][50]** ID of the account to trade on.
     -   `options.orderbookId` **[String][50]** ID of the instrument to trade.
-    -   `options.orderType` **[String][50]** One of "BUY" or "SELL".
+    -   `options.side` **[String][50]** One of "BUY" or "SELL".
     -   `options.price` **[Number][52]** The price limit of the order.
     -   `options.validUntil` **[String][50]** A date on the form YYYY-MM-DD. Cancels
                                            the order if this date is passed.
