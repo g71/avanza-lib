@@ -751,7 +751,7 @@ Place a limit order.
                                            the order if this date is passed.
     -   `options.volume` **[Number][52]** How many securities to order.
 
-Returns **[Object][49]** Properties are `messages`, `requestId`, `status`, `orderId`.
+Returns **[Object][49]** Properties are `messages`, `requestId`, `orderRequestStatus`, `orderId`.
 
 ### getOrder
 

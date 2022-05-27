@@ -65,7 +65,7 @@ test('place valid order, edit it and delete it', async t => {
     expected = {
       messages: [''],
       requestId: '-1',
-      status: 'SUCCESS',
+      orderRequestStatus: 'SUCCESS',
     }
 
     // Save for later
@@ -73,7 +73,7 @@ test('place valid order, edit it and delete it', async t => {
 
     t.deepEqual(actual.messages, expected.messages, 'placeOrder().messages')
     t.is(actual.requestId, '-1', 'placeOrder().requestId')
-    t.is(actual.status, 'SUCCESS', 'placeOrder().status')
+    t.is(actual.orderRequestStatus, 'SUCCESS', 'placeOrder().orderRequestStatus')
   } catch (e) {
     t.fail(`Could not place buy order:${e.statusMessage}`)
   }
