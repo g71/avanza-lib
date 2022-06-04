@@ -1,16 +1,12 @@
-# Avanza [![Build Status](https://travis-ci.com/fhqvst/avanza.svg?branch=master)](https://travis-ci.com/fhqvst/avanza)
+# Avanza
 
 A Node.js wrapper for the unofficial Avanza API. Please note that this is only a proof of concept, hence not meant to be used by anyone.
 
 It might also be valuable to note that I am not affiliated with Avanza Bank AB in any way. The underlying API can be taken down or changed without warning at any point in time.
 
-## Interested in finance?
-
-[Talos](https://talos.com) is hiring senior engineers! Send an email to `filip+hiring` at `talos.com`.
-
 ## Installation
 
-Install via [npm](https://www.npmjs.com/package/avanza)
+Install via [npm](https://www.npmjs.com/package/avanza-lib)
 ```bash
 $ npm install avanza
 ```
@@ -19,8 +15,6 @@ $ npm install avanza
 Refer to [API.md](./API.md).
 
 ## Getting a TOTP Secret
-
-**NOTE: Since May 2018 two-factor authentication is used to log in.**
 
 Here are the steps to get your TOTP Secret:
 
@@ -36,7 +30,7 @@ Here are the steps to get your TOTP Secret:
 Authenticate and fetch currently held positions:
 
 ```javascript
-import Avanza from 'avanza'
+import Avanza from 'avanza-lib'
 const avanza = new Avanza()
 
 avanza.authenticate({
@@ -52,7 +46,7 @@ avanza.authenticate({
 Authenticate and subscribe to real-time data:
 
 ```javascript
-import Avanza from 'avanza'
+import Avanza from 'avanza-lib'
 const avanza = new Avanza()
 
 avanza.authenticate({
