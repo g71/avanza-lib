@@ -1,4 +1,4 @@
-# Avanza
+# Avanza-lib
 
 A Node.js wrapper for the unofficial Avanza API. Please note that this is only a proof of concept, hence not meant to be used by anyone.
 
@@ -8,7 +8,7 @@ It might also be valuable to note that I am not affiliated with Avanza Bank AB i
 
 Install via [npm](https://www.npmjs.com/package/avanza-lib)
 ```bash
-$ npm install avanza
+$ npm install avanza-lib
 ```
 ## Documentation
 
