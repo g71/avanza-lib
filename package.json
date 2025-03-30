@@ -7,7 +7,7 @@
     "build": "babel lib -d dist",
     "start": "cross-env NODE_ENV=production babel lib -d dist",
     "test": "npm start && cross-env NODE_ENV=test NODE_PATH=lib ava tests/**/*.test.js -s -c 1",
-    "simpleTest": "npm start && cross-env NODE_ENV=test NODE_PATH=lib ava tests/**/*.test.js -s -c 1 -v --match='authenticated' --match='get overview' --match='get positions'",
+    "basicTest": "npm start && cross-env NODE_ENV=test NODE_PATH=lib ava tests/**/*.test.js -s -c 1 -v --match='authenticated' --match='get overview' --match='get positions'",
     "lint": "eslint lib/**/* --max-warnings=0",
     "docs": "npm start && node scripts/generate-documentation.js",
     "prepublishOnly": "npm run lint"
