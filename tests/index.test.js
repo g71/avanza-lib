@@ -16,15 +16,24 @@ test.before(async () => {
   })
 })
 
+test.after(() => {
+  avanza.disconnect()
+})
+
 test('authenticated', async t => {
-  t.is(typeof avanza._authenticationSession, 'string', 'authenticationSession is set')
+  t.is(typeof avanza._authenticated, 'boolean', 'authenticated is set')
+  t.is(typeof avanza._credentials, 'object', 'credentials is set')
   t.is(typeof avanza._pushSubscriptionId, 'string', 'pushSubscriptionId is set')
   t.is(typeof avanza._customerId, 'string', 'customerId is set')
   t.is(typeof avanza._securityToken, 'string', 'securityToken is set')
 })
 
-test('make call after being authenticated', async t => {
+test('get overview', async t => {
   t.truthy(await avanza.getOverview())
+})
+
+test('get positions', async t => {
+  t.truthy(await avanza.getPositions())
 })
 
 test('place valid order, edit it and delete it', async t => {
