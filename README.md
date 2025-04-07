@@ -1,14 +1,16 @@
+# NOTE
+
+*This a fork from a fork, see GitHub. It will probably be stripped down to mere basics, e.g. removing event listening API. Below information might be or become obsolete.*
+
 # Avanza-lib
 
 A Node.js wrapper for the unofficial Avanza API. Please note that this is only a proof of concept, hence not meant to be used by anyone.
 
-It might also be valuable to note that I am not affiliated with Avanza Bank AB in any way. The underlying API can be taken down or changed without warning at any point in time.
-
 ## Installation
 
-Install via [npm](https://www.npmjs.com/package/avanza-lib)
+Install via [npm](https://www.npmjs.com/package/@g71/avanza-lib)
 ```bash
-$ npm install avanza-lib
+$ npm install @g71/avanza-lib
 ```
 ## Documentation
 

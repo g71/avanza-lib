@@ -1,20 +1,20 @@
 {
-  "name": "avanza-lib",
-  "version": "3.1.7",
-  "description": "A wrapper for the unofficial Avanza API",
+  "name": "@g71/avanza-lib",
+  "version": "3.1.8",
+  "description": "A wrapper for the unofficial Avanza API, based on https://github.com/dichai1983/avanza-lib.git",
   "main": "dist/index.js",
   "scripts": {
     "build": "babel lib -d dist",
     "start": "cross-env NODE_ENV=production babel lib -d dist",
-    "test": "npm start && cross-env NODE_ENV=test NODE_PATH=lib ava tests/**/*.test.js -s -c 1",
-    "basicTest": "npm start && cross-env NODE_ENV=test NODE_PATH=lib ava tests/**/*.test.js -s -c 1 -v --match='authenticated' --match='get overview' --match='get positions'",
+    "testAll": "npm start && cross-env NODE_ENV=test NODE_PATH=lib ava tests/**/*.test.js -s -c 1",
+    "test": "npm start && cross-env NODE_ENV=test NODE_PATH=lib ava tests/**/*.test.js -s -c 1 -v --match='authenticated' --match='get overview' --match='get positions'",
     "lint": "eslint lib/**/* --max-warnings=0",
     "docs": "npm start && node scripts/generate-documentation.js",
     "prepublishOnly": "npm run lint"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dichai1983/avanza-lib.git"
+    "url": "git+https://github.com/g71/avanza-lib"
   },
   "license": "MIT",
   "files": [
